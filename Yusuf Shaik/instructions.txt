@@ -1,0 +1,3 @@
+confluent kafka topic create students --partitions 3
+confluent kafka topic produce --parse-key --delimiter : --value-format string students
+confluent kafka topic consume --from-beginning students
